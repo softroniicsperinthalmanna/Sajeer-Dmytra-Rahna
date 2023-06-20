@@ -38,7 +38,7 @@ class _paymentmethodState extends State<paymentmethod> {
                   Padding(
                     padding: const EdgeInsets.only(top:48.0),
                     child: Container(
-                      height: 500,width: double.infinity,
+                      height: 400,width: double.infinity,
                       decoration:
                       BoxDecoration(
                           color: Colors.white,
@@ -50,25 +50,128 @@ class _paymentmethodState extends State<paymentmethod> {
                       Padding(
                         padding: const EdgeInsets.only(top:10,left:25,right:25),
                         child:
-                        Container(height: 90,
-                          child: Card(
-                            shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20),),
-                            color: Color(0xffDCE1E4)
-                            // elevation: 10,shadowColor: Colors.black,
-                            // child:ListTile(
-                            //   leading: Image(image:AssetImage("assets/imgs/gpay.jpg")),
-                            //   title: Text('Yoga meditation at morning',style: TextStyle(fontWeight: FontWeight.bold),),
-                            //   subtitle: Text('jhon123@gmail.com'),
-                            // ),
-                          ),
+                        Column(
+                          children: [
+                            Container(
+                              height: 90,
+                              child: Card(
+                                shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20),),
+                                color: Color(0xffDCE1E4),
+                                child:
+                                  Row(
+                                    children: [
+                                      Image(image:AssetImage("assets/imgs/gpay.jpg")),
+                                      Padding(
+                                        padding: const EdgeInsets.only(top:15,left:15),
+                                        child: Column(
+                                          children: [
+                                            Text('*********************',style: TextStyle(fontWeight: FontWeight.bold,fontSize: 17),),
+                                            InkWell(
+                                              onTap: () {},
+                                              child: Text('jhon123@gmail.com', style: TextStyle(decoration: TextDecoration.underline, color: Colors.blue,fontWeight: FontWeight.bold,fontSize: 15),
+                                              ),
+                                            )
+                                          ],
+                                        ),
+                                      )
+                                    ],
+                                  )
+                              ),
+                            ),
+                            Container(height: 90,
+                              child: Card(
+                                  shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20),),
+                                  color: Color(0xffDCE1E4),
+                                  child:
+                                  Row(
+                                    children: [
+                                      Image(image:AssetImage("assets/imgs/pytm.jpg")),
+                                      Padding(
+                                        padding: const EdgeInsets.only(top:15,left:15),
+                                        child: Column(
+                                          children: [
+                                            Text('*********************',style: TextStyle(fontWeight: FontWeight.bold,fontSize: 17),),
+                                            InkWell(
+                                              onTap: () {},
+                                              child: Text('jhon123@gmail.com', style: TextStyle(decoration: TextDecoration.underline, color: Colors.blue,fontWeight: FontWeight.bold,fontSize: 15),
+                                              ),
+                                            )
+                                          ],
+                                        ),
+                                      )
+                                    ],
+                                  )
+                              ),
+                            ),
+                            Container(height: 90,
+                              child: Card(
+                                  shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20),),
+                                  color: Color(0xffDCE1E4),
+                                  child:
+                                  Row(
+                                    children: [
+                                      Image(image:AssetImage("assets/imgs/visa.jpg")),
+                                      Padding(
+                                        padding: const EdgeInsets.only(top:15,left:15),
+                                        child: Column(
+                                          children: [
+                                            Text('*********************',style: TextStyle(fontWeight: FontWeight.bold,fontSize: 17),),
+                                            // InkWell(
+                                            //   onTap: () {},
+                                            //   child: Text('jhon123@gmail.com', style: TextStyle(decoration: TextDecoration.underline, color: Colors.blue,fontWeight: FontWeight.bold,fontSize: 15),
+                                            //   ),
+                                            // )
+                                          ],
+                                        ),
+                                      )
+                                    ],
+                                  )
+                              ),
+                            ),
+                            Container(height: 90,
+                              child: Card(
+                                  shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20),),
+                                   color: Color(0xffDCE1E4),
+                                  child:
+                                  Row(
+                                    children: [
+                                      Image(image:AssetImage("assets/imgs/phonepay.jpg")),
+                                      Padding(
+                                        padding: const EdgeInsets.only(top:15,left:15),
+                                        child: Column(
+                                          children: [
+                                            Text('*********************',style: TextStyle(fontWeight: FontWeight.bold,fontSize: 17),),
+                                            // InkWell(
+                                            //   onTap: () {},
+                                            //   child: Text('jhon123@gmail.com', style: TextStyle(decoration: TextDecoration.underline, color: Colors.blue,fontWeight: FontWeight.bold,fontSize: 15),
+                                            //   ),
+                                            // )
+                                          ],
+                                        ),
+                                      )
+                                    ],
+                                  )
+                              ),
+                            ),
+                          ],
                         ),
+
                       ),
                     ],
                   ),
                   ),
                   ),
             ],
-          )
+          ),
+        Padding(
+          padding: const EdgeInsets.only(top:25),
+          child: Container(height: 50,width: 300,
+            color:Color(0xff3A9AAE),
+            child: ElevatedButton(
+                onPressed: (){},
+                child: Text('ADD PAYMENT METHOD',style: TextStyle(fontSize: 17,color: Colors.black,fontWeight: FontWeight.bold),)),
+          ),
+        )
         ],
       ),
     );
